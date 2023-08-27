@@ -11,3 +11,14 @@
     Output:
         Result: D C B A
 */
+#include <stdio.h>
+int main () {
+    char a, b, c, d ;
+    printf( "Test case: \n" ) ;
+    scanf(" %c %c %c %c", &a, &b, &c, &d) ;
+
+    if ( ( a >= 'A' && a <= 'Z' )  && ( b >= 'A' && b <= 'Z' )  && ( c >= 'A' && c <= 'Z' )  && ( d >= 'A' && d <= 'Z' ) ) {
+        printf("Result: %c %c %c %c", d, c, b, a);
+    } //end if
+    return 0;
+} //end main function
